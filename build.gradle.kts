@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.kotlin.dsl.kotlinScriptDefExtensions as withConvention
 
 plugins {
 	id("org.springframework.boot") version "2.5.4"
@@ -13,14 +14,6 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
-}
-
-sourceSets.main {
-	java.srcDirs("src/main")
-}
-
-sourceSets.test {
-	java.srcDirs("src/test", "src/cucumber/kotlin", "src/cucumber")
 }
 
 dependencies {
@@ -67,17 +60,22 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-tasks {
-	test {
-		filter {
-			excludeTestsMatching("**.RunBDDTests")
+sourceSets {
+	create("cucumber") {
+		withConvention(org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet::class) {
+			kotlin.srcDirs("src/cucumber/kotlin", "src/cucumber")
+			resources.srcDir("src/cucumber/resources")
+			compileClasspath += sourceSets["main"].output + configurations["testRuntimeClasspath"]
+			runtimeClasspath += output + compileClasspath + sourceSets["test"].runtimeClasspath
 		}
 	}
 }
 
-task<Test>("acceptanceTest") {
+task<Test>("cucumber") {
+	description = "Runs the cucumber tests"
+	group = "verification"
+	testClassesDirs = sourceSets["cucumber"].output.classesDirs
+	classpath = sourceSets["cucumber"].runtimeClasspath
 	useJUnitPlatform()
-	filter {
-		includeTestsMatching("**.RunBDDTests")
-	}
 }
+
