@@ -1,8 +1,7 @@
--- # liquibase formatted sql
--- # changeset mydb:data
+-- liquibase formatted sql
+-- changeset mydb:data
 
-
-DROP TABLE IF EXISTS pets;
+DROP TABLE IF EXISTS mydb.pets;
 
 CREATE TABLE mydb.pets (
    id INT AUTO_INCREMENT  PRIMARY KEY,
@@ -14,6 +13,6 @@ CREATE TABLE mydb.pets (
 );
 
 INSERT INTO pets (name, description, breed, type, price) VALUES
- ('Nemo', 'fish', 'piranah', 'a fricking fich', '$100')
+ ('Nemo2', 'fish', 'piranah', 'a fricking fich', '$100')
 
--- # rollback DROP TABLE IF EXISTS mydb.pets
+-- rollback DROP TABLE IF EXISTS mydb.pets

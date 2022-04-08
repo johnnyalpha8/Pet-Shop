@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@OpenAPIDefinition(info = Info(title = "Pet Shop API", version = "1.0",
-description = "Documentation of the Pet Shop API v1.0")
+@OpenAPIDefinition(info = Info(title = "User API", version = "1.0",
+description = "Documentation of the User API v1.0")
 )
 class ReactiveKotlinApplication
 

@@ -1,16 +1,12 @@
 package at
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.jayway.jsonpath.JsonPath
 import io.cucumber.datatable.DataTable
 import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
 import org.json.JSONArray
-import org.json.JSONException
 import org.json.JSONObject
 import org.skyscreamer.jsonassert.JSONAssert
-import org.skyscreamer.jsonassert.JSONCompareMode
 import org.skyscreamer.jsonassert.JSONCompareMode.LENIENT
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType.APPLICATION_JSON
@@ -22,8 +18,7 @@ import java.util.function.Consumer
 import java.util.stream.Collectors
 
 class StepDefinitions(
-    @Autowired private val webClient: WebTestClient,
-    @Autowired private val objectMapper: ObjectMapper
+    @Autowired private val webClient: WebTestClient
 ) {
     private lateinit var response: ResponseSpec
 
@@ -32,7 +27,7 @@ class StepDefinitions(
         convertDataTableToJsonArray(dataTable).forEach {
             val next: JSONObject = it as JSONObject
             webClient.post()
-                .uri("/catalog/search")
+                .uri("/catalog/pets")
                 .contentType(APPLICATION_JSON)
                 .body(
                     fromValue(
@@ -47,7 +42,7 @@ class StepDefinitions(
     fun i_select(name: String?) {
         response = webClient.get()
             .uri { builder ->
-                builder.path("/catalog/search")
+                builder.path("/catalog/pets")
                     .queryParam("petName", name)
                     .build()
             }
@@ -70,16 +65,6 @@ class StepDefinitions(
         return JSONObject(responseString)
     }
 
-
-    fun <T> extractFromJsonPath(responseBody: String, jsonPath: String, type: Class<T>): T {
-        return JsonPath.parse(responseBody).read(jsonPath, type)
-    }
-
-    fun <T> toJson(value: T, objectMapper: ObjectMapper): String {
-        return objectMapper.writeValueAsString(value)
-    }
-
-    @Throws(JSONException::class)
     private fun convertDataTableToJsonArray(
         dataTable: DataTable,
         vararg columnsToIgnore: String

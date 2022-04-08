@@ -11,7 +11,6 @@ data class PetCreateRequest(
     val description: String,
     @field:NotEmpty
     val type: String,
-//    @field:NotEmpty
     val price: String,
     @field:NotEmpty
     val breed: String)

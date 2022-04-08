@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.5.4"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.5.21"
+	kotlin("jvm") version "1.6.20"
 	kotlin("plugin.spring") version "1.5.21"
 }
 
@@ -37,18 +37,17 @@ dependencies {
 	implementation("org.springdoc:springdoc-openapi-webflux-ui:1.6.4")
 	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.3")
 	implementation("org.mariadb:r2dbc-mariadb")
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+	implementation("org.liquibase:liquibase-core")
+	implementation("org.mariadb.jdbc:mariadb-java-client")
 
-	implementation("org.liquibase:liquibase-gradle-plugin:2.0.3")
-	implementation("org.liquibase:liquibase-core:2.0.3")
-
-	implementation("org.mariadb.jdbc:mariadb-java-client:3.0.3")
 	testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
 	testImplementation("org.junit.jupiter:junit-jupiter-engine")
 	testImplementation("org.testcontainers:testcontainers:1.16.0")
 	testImplementation("org.testcontainers:junit-jupiter:1.16.0")
 	testImplementation("org.testcontainers:mariadb:1.16.3")
 	testImplementation("org.testcontainers:r2dbc:1.16.0")
-	testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
+//	testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.junit.vintage:junit-vintage-engine:5.7.2")
