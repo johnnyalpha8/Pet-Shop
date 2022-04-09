@@ -79,3 +79,4 @@ task<Test>("cucumber") {
 	useJUnitPlatform()
 }
 
+//https://stackoverflow.com/questions/52904603/integration-tests-with-gradle-kotlin-dsl/52906232#52906232
