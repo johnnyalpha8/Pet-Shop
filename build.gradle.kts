@@ -1,5 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.gradle.kotlin.dsl.kotlinScriptDefExtensions as withConvention
 
 plugins {
 	id("org.springframework.boot") version "2.5.4"
@@ -60,15 +60,15 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+val SourceSet.kotlin: SourceDirectorySet
+	get() = project.extensions.getByType<KotlinJvmProjectExtension>().sourceSets.getByName(name).kotlin
+
 sourceSets {
 	create("cucumber") {
-		withConvention(org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet::class) {
-			kotlin.srcDirs("src/cucumber/kotlin", "src/cucumber")
-			resources.srcDir("src/cucumber/resources")
+			kotlin.srcDirs( "src/cucumber")
 			compileClasspath += sourceSets["main"].output + configurations["testRuntimeClasspath"]
 			runtimeClasspath += output + compileClasspath + sourceSets["test"].runtimeClasspath
 		}
-	}
 }
 
 task<Test>("cucumber") {
@@ -78,5 +78,3 @@ task<Test>("cucumber") {
 	classpath = sourceSets["cucumber"].runtimeClasspath
 	useJUnitPlatform()
 }
-
-//https://stackoverflow.com/questions/52904603/integration-tests-with-gradle-kotlin-dsl/52906232#52906232

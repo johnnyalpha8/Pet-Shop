@@ -1,0 +1,363 @@
+Initialized native services in: /home/charliejade/.gradle/native
+Found daemon DaemonInfo{pid=22971, address=[2cd7b5fc-3e9a-4e07-ad1d-30cb14dd9671 port:45261, addresses:[/127.0.0.1]], state=Idle, lastBusy=1643540277906, context=DefaultDaemonContext[uid=9e0ab3a2-80c0-4842-a3a7-8a2f87b90fef,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=22971,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:37369,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=31989,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=9e0ab3a2-80c0-4842-a3a7-8a2f87b90fef,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=22971,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:37369,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=19361, address=[f210ef0f-e574-4371-a2bb-cd4ff91bb5ae port:35579, addresses:[/127.0.0.1]], state=Idle, lastBusy=1644786695578, context=DefaultDaemonContext[uid=98f98b2f-cc05-4aab-8ee1-f40d350058f1,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=19361,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:41295,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=31989,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=98f98b2f-cc05-4aab-8ee1-f40d350058f1,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=19361,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:41295,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=26677, address=[63ce7dcc-93cd-41ac-be64-79074f80f9ed port:46289, addresses:[/127.0.0.1]], state=Idle, lastBusy=1649460194008, context=DefaultDaemonContext[uid=33d03d2f-e633-4333-be50-e417e498d317,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=26677,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=31989,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=33d03d2f-e633-4333-be50-e417e498d317,javaHome=/home/charliejade/.jdks/corretto-11.0.8,daemonRegistryDir=/home/charliejade/.gradle/daemon,pid=26677,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 29351). The daemon log file: /home/charliejade/.gradle/daemon/7.1.1/daemon-29351.out.log
+Starting 54th build in daemon [uptime: 1 hrs 59 mins 55.96 secs, performance: 100%, non-heap usage: 47% of 256 MiB]
+Using 6 worker leases.
+Now considering [/home/charliejade/sandbox/Pet-Shop, /home/charliejade/dev/apps/Pet-Shop] as hierarchies to watch
+Watching the file system is enabled if available
+Starting Build
+Settings evaluated using settings file '/home/charliejade/sandbox/Pet-Shop/settings.gradle.kts'.
+Projects loaded. Root project using build file '/home/charliejade/sandbox/Pet-Shop/build.gradle.kts'.
+Included projects: [root project 'reactiveKotlin']
+
+> Configure project :
+Evaluating root project 'reactiveKotlin' using build file '/home/charliejade/sandbox/Pet-Shop/build.gradle.kts'.
+Applying dependency management to configuration 'bootArchives' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinCompilerClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinCompilerPluginClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinNativeCompilerPluginClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinKlibCommonizerClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'archives' in project 'reactiveKotlin'
+Applying dependency management to configuration 'default' in project 'reactiveKotlin'
+Applying dependency management to configuration 'implementation' in project 'reactiveKotlin'
+Applying dependency management to configuration 'compileOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'compileClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'annotationProcessor' in project 'reactiveKotlin'
+Applying dependency management to configuration 'runtimeOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'runtimeClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testImplementation' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testCompileOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testCompileClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'apiElements' in project 'reactiveKotlin'
+Applying dependency management to configuration 'runtimeElements' in project 'reactiveKotlin'
+Applying dependency management to configuration 'developmentOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'api' in project 'reactiveKotlin'
+Applying dependency management to configuration 'apiDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'implementationDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'compileOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'runtimeOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'intransitiveDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testApi' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testApiDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testImplementationDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testCompileOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testRuntimeOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testIntransitiveDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinCompilerPluginClasspathMain' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinScriptDef' in project 'reactiveKotlin'
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+Applying dependency management to configuration 'kotlinScriptDefExtensions' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinCompilerPluginClasspathTest' in project 'reactiveKotlin'
+Applying dependency management to configuration 'testKotlinScriptDef' in project 'reactiveKotlin'
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Applying dependency management to configuration 'testKotlinScriptDefExtensions' in project 'reactiveKotlin'
+Applying dependency management to configuration 'sourceArtifacts' in project 'reactiveKotlin'
+Caching disabled for Kotlin DSL accessors for root project 'reactiveKotlin' because:
+  Build cache is disabled
+Skipping Kotlin DSL accessors for root project 'reactiveKotlin' as it is up-to-date.
+Applying dependency management to configuration 'cucumberImplementation' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberCompileOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberCompileClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberAnnotationProcessor' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberRuntimeOnly' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberRuntimeClasspath' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberApi' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberApiDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberImplementationDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberCompileOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberRuntimeOnlyDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberIntransitiveDependenciesMetadata' in project 'reactiveKotlin'
+Applying dependency management to configuration 'kotlinCompilerPluginClasspathCucumber' in project 'reactiveKotlin'
+Applying dependency management to configuration 'cucumberKotlinScriptDef' in project 'reactiveKotlin'
+kotlin scripting plugin: created the scripting discovery configuration: cucumberKotlinScriptDef
+Applying dependency management to configuration 'cucumberKotlinScriptDefExtensions' in project 'reactiveKotlin'
+Applying dependency management to configuration 'apiElements-published' in project 'reactiveKotlin'
+Applying dependency management to configuration 'runtimeElements-published' in project 'reactiveKotlin'
+All projects evaluated.
+Selected primary task 'clean' from project :
+Selected primary task 'build' from project :
+Tasks to be executed: [task ':clean', task ':compileKotlin', task ':compileJava', task ':processResources', task ':classes', task ':bootJarMainClassName', task ':bootJar', task ':inspectClassesForKotlinIC', task ':jar', task ':assemble', task ':compileTestKotlin', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+Tasks that were excluded: []
+:clean (Thread[Execution worker for ':',5,main]) started.
+
+> Task :clean
+Caching disabled for task ':clean' because:
+  Build cache is disabled
+Task ':clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Watching 89 directories to track changes
+:clean (Thread[Execution worker for ':',5,main]) completed. Took 0.021 secs.
+:compileKotlin (Thread[Execution worker for ':',5,main]) started.
+:processResources (Thread[Execution worker for ':' Thread 5,5,main]) started.
+
+> Task :processResources
+Watching 90 directories to track changes
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+Task ':processResources' is not up-to-date because:
+  Output property 'destinationDir' file /home/charliejade/sandbox/Pet-Shop/build/resources/main has been removed.
+  Output property 'destinationDir' file /home/charliejade/sandbox/Pet-Shop/build/resources/main/application.properties has been removed.
+  Output property 'destinationDir' file /home/charliejade/sandbox/Pet-Shop/build/resources/main/db has been removed.
+Watching 89 directories to track changes
+Watching 93 directories to track changes
+:processResources (Thread[Execution worker for ':' Thread 5,5,main]) completed. Took 0.004 secs.
+:processTestResources (Thread[Execution worker for ':' Thread 5,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/resources', not found
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+:processTestResources (Thread[Execution worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+
+> Task :compileKotlin
+Watching 90 directories to track changes
+Watching 90 directories to track changes
+Resolving global dependency management for project 'reactiveKotlin'
+Excluding []
+Excluding []
+Excluding []
+Caching disabled for task ':compileKotlin' because:
+  Build cache is disabled
+Task ':compileKotlin' is not up-to-date because:
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/main has been removed.
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/main/com has been removed.
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/main/com/johncooper has been removed.
+Watching 90 directories to track changes
+Watching 89 directories to track changes
+The input changes require a full rebuild for incremental task ':compileKotlin'.
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/main/java', not found
+Using Kotlin/JVM incremental compilation
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/main/java', not found
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/main/java', not found
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/main/java', not found
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64
+i: found daemon on port 17757 (32957266 ms old), trying to connect
+i: connected to the daemon
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0]kotlinScriptExtensions=[kt, kts, java]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=org.jetbrains.kotlin.incremental.ClasspathChanges$ClasspathSnapshotDisabled@4dba4925, workingDir=/home/charliejade/sandbox/Pet-Shop/build/kotlin/compileKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/home/charliejade/sandbox/Pet-Shop/build/kotlin/compileKotlin/localstate/build-history.bin, useModuleDetection=false), usePreciseJavaTracking=trueoutputFiles=[/home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/main, /home/charliejade/sandbox/Pet-Shop/build/kotlin/compileKotlin/cacheable, /home/charliejade/sandbox/Pet-Shop/build/kotlin/compileKotlin/localstate])
+Watching 104 directories to track changes
+Watching 111 directories to track changes
+:compileKotlin (Thread[Execution worker for ':',5,main]) completed. Took 1.4 secs.
+:compileJava (Thread[Execution worker for ':',5,main]) started.
+
+> Task :compileJava NO-SOURCE
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/main/java', not found
+Skipping task ':compileJava' as it has no source files and no previous output files.
+:compileJava (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:classes (Thread[Execution worker for ':',5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+:classes (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:bootJarMainClassName (Thread[Execution worker for ':',5,main]) started.
+
+> Task :bootJarMainClassName
+Watching 112 directories to track changes
+Excluding []
+Excluding []
+Excluding []
+Watching 113 directories to track changes
+Caching disabled for task ':bootJarMainClassName' because:
+  Build cache is disabled
+Task ':bootJarMainClassName' is not up-to-date because:
+  Output property 'outputFile' file /home/charliejade/sandbox/Pet-Shop/build/bootJarMainClassName has been removed.
+Watching 112 directories to track changes
+Watching 113 directories to track changes
+:bootJarMainClassName (Thread[Execution worker for ':',5,main]) completed. Took 0.117 secs.
+:bootJar (Thread[Execution worker for ':',5,main]) started.
+
+> Task :bootJar
+Watching 113 directories to track changes
+Watching 114 directories to track changes
+Caching disabled for task ':bootJar' because:
+  Build cache is disabled
+Task ':bootJar' is not up-to-date because:
+  Output property 'archiveFile' file /home/charliejade/sandbox/Pet-Shop/build/libs/reactiveKotlin-0.0.1-SNAPSHOT.jar has been removed.
+Watching 114 directories to track changes
+Watching 113 directories to track changes
+Watching 114 directories to track changes
+:bootJar (Thread[Execution worker for ':',5,main]) completed. Took 0.439 secs.
+:inspectClassesForKotlinIC (Thread[Execution worker for ':',5,main]) started.
+
+> Task :inspectClassesForKotlinIC
+Watching 115 directories to track changes
+Caching disabled for task ':inspectClassesForKotlinIC' because:
+  Build cache is disabled
+Task ':inspectClassesForKotlinIC' is not up-to-date because:
+  Output property 'classesListFile$kotlin_gradle_plugin' file /home/charliejade/sandbox/Pet-Shop/build/kotlin/reactiveKotlin001SNAPSHOTplainjar-classes.txt has been removed.
+Watching 114 directories to track changes
+file or directory '/home/charliejade/sandbox/Pet-Shop/build/classes/java/main', not found
+Watching 115 directories to track changes
+:inspectClassesForKotlinIC (Thread[Execution worker for ':',5,main]) completed. Took 0.002 secs.
+:jar (Thread[Execution worker for ':',5,main]) started.
+
+> Task :jar
+file or directory '/home/charliejade/sandbox/Pet-Shop/build/classes/java/main', not found
+Watching 115 directories to track changes
+Watching 116 directories to track changes
+Caching disabled for task ':jar' because:
+  Build cache is disabled
+Task ':jar' is not up-to-date because:
+  Output property 'archiveFile' file /home/charliejade/sandbox/Pet-Shop/build/libs/reactiveKotlin-0.0.1-SNAPSHOT-plain.jar has been removed.
+Watching 116 directories to track changes
+file or directory '/home/charliejade/sandbox/Pet-Shop/build/classes/java/main', not found
+Watching 116 directories to track changes
+:jar (Thread[Execution worker for ':',5,main]) completed. Took 0.008 secs.
+:assemble (Thread[Execution worker for ':',5,main]) started.
+
+> Task :assemble
+Skipping task ':assemble' as it has no actions.
+:assemble (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:compileTestKotlin (Thread[Execution worker for ':',5,main]) started.
+
+> Task :compileTestKotlin
+Watching 116 directories to track changes
+Watching 116 directories to track changes
+Excluding []
+Excluding []
+Caching disabled for task ':compileTestKotlin' because:
+  Build cache is disabled
+Task ':compileTestKotlin' is not up-to-date because:
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/test has been removed.
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/test/at has been removed.
+  Output property 'destinationDirectory' file /home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/test/at/CucumberConfiguration$Companion.class has been removed.
+Watching 116 directories to track changes
+Watching 116 directories to track changes
+The input changes require a full rebuild for incremental task ':compileTestKotlin'.
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+Using Kotlin/JVM incremental compilation
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64
+i: found daemon on port 17757 (32958729 ms old), trying to connect
+i: connected to the daemon
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0]kotlinScriptExtensions=[kt, kts, java]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=org.jetbrains.kotlin.incremental.ClasspathChanges$ClasspathSnapshotDisabled@7475f373, workingDir=/home/charliejade/sandbox/Pet-Shop/build/kotlin/compileTestKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/home/charliejade/sandbox/Pet-Shop/build/kotlin/compileTestKotlin/localstate/build-history.bin, useModuleDetection=false), usePreciseJavaTracking=trueoutputFiles=[/home/charliejade/sandbox/Pet-Shop/build/classes/kotlin/test, /home/charliejade/sandbox/Pet-Shop/build/kotlin/compileTestKotlin/cacheable, /home/charliejade/sandbox/Pet-Shop/build/kotlin/compileTestKotlin/localstate])
+Watching 122 directories to track changes
+Watching 129 directories to track changes
+:compileTestKotlin (Thread[Execution worker for ':',5,main]) completed. Took 1.124 secs.
+:compileTestJava (Thread[Execution worker for ':',5,main]) started.
+
+> Task :compileTestJava NO-SOURCE
+file or directory '/home/charliejade/sandbox/Pet-Shop/src/test/java', not found
+Skipping task ':compileTestJava' as it has no source files and no previous output files.
+:compileTestJava (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:testClasses (Thread[Execution worker for ':',5,main]) started.
+
+> Task :testClasses UP-TO-DATE
+Skipping task ':testClasses' as it has no actions.
+:testClasses (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:test (Thread[Execution worker for ':',5,main]) started.
+Gradle Test Executor 34 started executing tests.
+
+> Task :test
+file or directory '/home/charliejade/sandbox/Pet-Shop/build/classes/java/test', not found
+Watching 129 directories to track changes
+Watching 129 directories to track changes
+Watching 129 directories to track changes
+Watching 129 directories to track changes
+Watching 129 directories to track changes
+Excluding []
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Output property 'binaryResultsDirectory' file /home/charliejade/sandbox/Pet-Shop/build/test-results/test/binary has been removed.
+  Output property 'binaryResultsDirectory' file /home/charliejade/sandbox/Pet-Shop/build/test-results/test/binary/output.bin has been removed.
+  Output property 'binaryResultsDirectory' file /home/charliejade/sandbox/Pet-Shop/build/test-results/test/binary/output.bin.idx has been removed.
+Watching 129 directories to track changes
+Watching 129 directories to track changes
+file or directory '/home/charliejade/sandbox/Pet-Shop/build/classes/java/test', not found
+Starting process 'Gradle Test Executor 34'. Working directory: /home/charliejade/sandbox/Pet-Shop Command: /home/charliejade/dev/jres/amazon-corretto-17.0.2.8.1-linux-x64/bin/java -Dorg.gradle.internal.worker.tmpdir=/home/charliejade/sandbox/Pet-Shop/build/tmp/test/work -Dorg.gradle.native=false @/home/charliejade/.gradle/.tmp/gradle-worker-classpath17171038481625022865txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=GB -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 34'
+Successfully started process 'Gradle Test Executor 34'
+
+Gradle Test Executor 34 STANDARD_ERROR
+    Apr 09, 2022 8:05:30 AM io.cucumber.core.runtime.FeaturePathFeatureSupplier get
+    WARNING: No features found at classpath:features
+    [32m[1m┌───────────────────────────────────────────────────────────────────────────────────┐[0m
+    [32m[1m│[0m Share your Cucumber Report with your team at [36m[1m[4mhttps://reports.cucumber.io[0m          [32m[1m│[0m
+    [32m[1m│[0m Activate publishing with one of the following:                                    [32m[1m│[0m
+    [32m[1m│[0m                                                                                   [32m[1m│[0m
+    [32m[1m│[0m src/test/resources/cucumber.properties:          [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m│[0m
+    [32m[1m│[0m src/test/resources/junit-platform.properties:    [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m│[0m
+    [32m[1m│[0m Environment variable:                            [36mCUCUMBER_PUBLISH_ENABLED[0m=[36mtrue[0m    [32m[1m│[0m
+    [32m[1m│[0m JUnit:                                           [36m@CucumberOptions[0m(publish = [36mtrue[0m) [32m[1m│[0m
+    [32m[1m│[0m                                                                                   [32m[1m│[0m
+    [32m[1m│[0m More information at [36mhttps://cucumber.io/docs/cucumber/environment-variables/[0m      [32m[1m│[0m
+    [32m[1m│[0m                                                                                   [32m[1m│[0m
+    [32m[1m│[0m Disable this message with one of the following:                                   [32m[1m│[0m
+    [32m[1m│[0m                                                                                   [32m[1m│[0m
+    [32m[1m│[0m src/test/resources/cucumber.properties:          [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m│[0m
+    [32m[1m│[0m src/test/resources/junit-platform.properties:    [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m│[0m
+    [32m[1m└───────────────────────────────────────────────────────────────────────────────────┘[0m
+
+ReactiveKotlinApplicationTests STANDARD_OUT
+    08:05:31.497 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+    08:05:31.515 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+    08:05:31.579 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+    08:05:31.608 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests]: class path resource [com/johncooper/reactiveKotlin/ReactiveKotlinApplicationTests-context.xml] does not exist
+    08:05:31.609 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests]: class path resource [com/johncooper/reactiveKotlin/ReactiveKotlinApplicationTestsContext.groovy] does not exist
+    08:05:31.610 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+    08:05:31.901 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests]: using defaults.
+    08:05:31.903 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+    08:05:31.920 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+    08:05:31.937 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1bfe6da5, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32197cf0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2d16dde9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@45ad2699, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d56e8cc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54d1ff6a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4f33898c, org.springframework.test.context.event.EventPublishingTestExecutionListener@6306e71d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@790c7339, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@227df9dd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71516bf7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@253b54cf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3fb47eea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@72cadbd0]
+    08:05:31.946 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7d0d8242 testClass = ReactiveKotlinApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3ea678b3 testClass = ReactiveKotlinApplicationTests, locations = '{}', classes = '{class com.johncooper.reactiveKotlin.ReactiveKotlinApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7a8cb14, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5bf9e753, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1ab97cf8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@224d634c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5abc175a, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@1fa6908f, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@7e478f8d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7216a4f5], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+    08:05:32.026 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7d0d8242 testClass = ReactiveKotlinApplicationTests, testInstance = com.johncooper.reactiveKotlin.ReactiveKotlinApplicationTests@1c645c22, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3ea678b3 testClass = ReactiveKotlinApplicationTests, locations = '{}', classes = '{class com.johncooper.reactiveKotlin.ReactiveKotlinApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7a8cb14, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5bf9e753, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1ab97cf8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@224d634c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5abc175a, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@1fa6908f, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@7e478f8d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7216a4f5], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+    08:05:32.086 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test]
+    08:05:32.095 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v2.5.4)
+
+    2022-04-09 08:05:33.231  WARN 32116 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+    Found multiple occurrences of org.json.JSONObject on the class path:
+
+    	jar:file:/home/charliejade/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar!/org/json/JSONObject.class
+    	jar:file:/home/charliejade/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+    You may wish to exclude one of them to ensure predictable runtime behavior
+
+    2022-04-09 08:05:33.323  INFO 32116 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+    2022-04-09 08:05:34.991  INFO 32116 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+    2022-04-09 08:05:34.996  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+    2022-04-09 08:05:35.122  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+      Server Version: 20.10.9
+      API Version: 1.41
+      Operating System: Linux Mint 19.3
+      Total Memory: 23485 MB
+    2022-04-09 08:05:35.131  INFO 32116 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+    2022-04-09 08:05:35.302  INFO 32116 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.3.1, configFile: /home/charliejade/.docker/config.json. Falling back to docker-java default behaviour. Exception message: /home/charliejade/.docker/config.json (No such file or directory)
+    2022-04-09 08:05:37.040  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+    2022-04-09 08:05:37.040  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+    2022-04-09 08:05:37.042  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+    2022-04-09 08:05:37.237  INFO 32116 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker environment should have more than 2GB free disk space
+    2022-04-09 08:05:37.311  INFO 32116 --- [    Test worker] 🐳 [mariadb:latest]                      : Creating container for image: mariadb:latest
+    2022-04-09 08:05:37.860  INFO 32116 --- [    Test worker] 🐳 [mariadb:latest]                      : Starting container with ID: 894389d11c9022bd8126190f9034c0330e0bc8c7311ba8cce6b219757246d2f8
+    2022-04-09 08:05:39.114  INFO 32116 --- [    Test worker] 🐳 [mariadb:latest]                      : Container mariadb:latest is starting: 894389d11c9022bd8126190f9034c0330e0bc8c7311ba8cce6b219757246d2f8
+    2022-04-09 08:05:39.206  INFO 32116 --- [    Test worker] 🐳 [mariadb:latest]                      : Waiting for database connection to become available at jdbc:mariadb://localhost:49243/mydb using query 'SELECT 1'
