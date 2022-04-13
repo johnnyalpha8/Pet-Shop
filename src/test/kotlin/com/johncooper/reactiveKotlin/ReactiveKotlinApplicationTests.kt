@@ -1,5 +1,6 @@
 package com.johncooper.reactiveKotlin
 
+import com.johncooper.reactiveKotlin.requests.PetCreateRequest
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ActiveProfiles
@@ -9,13 +10,14 @@ import org.springframework.test.context.DynamicPropertySource
 import org.testcontainers.containers.MariaDBContainer
 import org.testcontainers.junit.jupiter.Container
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @ContextConfiguration(classes = [ReactiveKotlinApplication::class])
 class ReactiveKotlinApplicationTests {
 
 	@Test
 	fun contextLoads() {
+		PetCreateRequest("", "","", "", "")
 	}
 
 	companion object {

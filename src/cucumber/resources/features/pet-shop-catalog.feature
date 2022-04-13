@@ -11,3 +11,4 @@ Feature: Pet Shop Catalog
     Then the following data should be returned:
       | name | description    | type | breed    | price |
       | Nemo | Friend of Dori | Fish | Goldfish | $15   |
+#    add uuids? + add all CRUD ops

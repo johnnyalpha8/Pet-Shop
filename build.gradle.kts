@@ -1,11 +1,15 @@
+import org.jetbrains.kotlin.descriptors.annotations.composeAnnotations
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.springframework.boot.gradle.tasks.run.BootRun
+import org.gradle.kotlin.dsl.*
 
 plugins {
 	id("org.springframework.boot") version "2.5.4"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	kotlin("jvm") version "1.6.20"
 	kotlin("plugin.spring") version "1.5.21"
+	id("com.avast.gradle.docker-compose") version "0.15.2"
 }
 
 group = "com.johncooper"
@@ -14,9 +18,13 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+	maven {
+		url = uri("https://repo1.maven.org/maven2/")
+	}
 }
 
 dependencies {
+
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -47,6 +55,11 @@ dependencies {
 	testImplementation("io.cucumber:cucumber-java:6.11.0")
 	testImplementation("io.cucumber:cucumber-spring:6.11.0")
 	testImplementation("io.cucumber:cucumber-junit:6.11.0")
+
+	testImplementation("io.rest-assured:rest-assured:5.0.1")
+	implementation("io.rest-assured:json-path:5.0.1")
+	implementation("io.rest-assured:xml-path:5.0.1")
+
 }
 
 tasks.withType<KotlinCompile> {
@@ -60,21 +73,42 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+
 val SourceSet.kotlin: SourceDirectorySet
 	get() = project.extensions.getByType<KotlinJvmProjectExtension>().sourceSets.getByName(name).kotlin
 
 sourceSets {
 	create("cucumber") {
-			kotlin.srcDirs( "src/cucumber")
-			compileClasspath += sourceSets["main"].output + configurations["testRuntimeClasspath"]
-			runtimeClasspath += output + compileClasspath + sourceSets["test"].runtimeClasspath
-		}
+//		compileKotlin.destinationDir = compileJava.destinationDir
+		kotlin.srcDirs( "src/cucumber")
+		compileClasspath += sourceSets["main"].output + configurations["testRuntimeClasspath"]
+		runtimeClasspath += output + compileClasspath + sourceSets["test"].runtimeClasspath
+	}
 }
 
-task<Test>("cucumber") {
+val cucumber = task<Test>("cucumber") {
 	description = "Runs the cucumber tests"
 	group = "verification"
 	testClassesDirs = sourceSets["cucumber"].output.classesDirs
 	classpath = sourceSets["cucumber"].runtimeClasspath
 	useJUnitPlatform()
+	dependsOn("composeUp")
+	finalizedBy("composeDown")
+}
+
+tasks.withType<Jar>() {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+//dockerCompose.isRequiredBy(cucumber)
+
+configure<com.avast.gradle.dockercompose.ComposeExtension> {
+	includeDependencies.set(true)
+	isRequiredBy(cucumber)
+	createNested("local").apply {
+		projectName = "reactiveKotlin"
+		environment.putAll(mapOf("TAGS" to "feature-test,local"))
+		startedServices.set(listOf("myservice", "mariadb"))
+		upAdditionalArgs.set(listOf("--no-deps"))
+	}
 }
